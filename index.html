@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>RPS-Game</title>
+</head>
+
+<body>
+
+        <div class="container">
+                <section class="section1">
+                        <section class="main">
+                                <h3 class="mb-2">Welcome to,</h3>
+                                <h1>🪨ock 📜aper ✂️cissors</h1>
+                                <div class="divider mt-4"></div>
+                                <div class="player_selection">
+                                        <h3 class="mb-4">Select Player</h3>
+                                        <div class="players">
+                                                <div class="player1_selection">
+                                                        <h4>Player 1</h4>
+                                                        <div class="player1_section mt-3">
+                                                                <button class="btn ps-4 pe-4"
+                                                                        onclick="player1face('👨🏻')">👨🏻</button>
+                                                                <button class="btn ps-4 pe-4"
+                                                                        onclick="player1face('👨🏻‍🦰')">👨🏻‍🦰</button>
+                                                                <button class="btn ps-4 pe-4"
+                                                                        onclick="player1face('🧔🏻‍♂️')">🧔🏻‍♂️</button>
+                                                                <button class="btn ps-4 pe-4"
+                                                                        onclick="player1face('👩🏻')">👩🏻</button>
+                                                        </div>
+                                                </div>
+                                                <div class="player2_selection">
+                                                        <h4>Player 2</h4>
+                                                        <div class="player2_section mt-3">
+                                                                <button class="btn ps-4 pe-4"
+                                                                        onclick="player2face('🧑🏻‍🦱')">🧑🏻‍🦱</button>
+                                                                <button class="btn ps-4 pe-4"
+                                                                        onclick="player2face('👦🏻')">👦🏻</button>
+                                                                <button class="btn ps-4 pe-4"
+                                                                        onclick="player2face('👩🏻‍🦰')">👩🏻‍🦰</button>
+                                                                <button class="btn ps-4 pe-4"
+                                                                        onclick="player2face('🧑🏽')">🧑🏽</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <a href="#game" class="text-decoration-none text-white">
+                                                <button class="btn btn-success mt-5 start">Start Game</button>
+                                        </a>
+                                </div>
+                        </section>
+                </section>
+                <section class="section2" id="game">
+                        <section class="main">
+                                <div class="points">
+                                        <div class="player1_points">
+                                                <h3 class="player1_img">👨🏻</h3>
+                                                <p class="player1_score">0</p>
+                                        </div>
+                                        <div class="player2_points">
+                                                <p class="player2_score">0</p>
+                                                <h3 class="player2_img">👨🏻</h3>
+                                        </div>
+                                </div>
+                                <div class="score_counts">
+                                        <span class="border border-danger pt-1 pb-1 ">
+                                                <span class="bg-danger pt-1 pb-1 ps-2 pe-2">Count :</span>
+                                                <span class="counter ps-2 pe-2"><span class="count">0</span></span>
+                                        </span>
+                                </div>
+                                <div class="gameView">
+                                        <h1 class="player1_hand">✊</h1>
+                                        <h3>Vs</h3>
+                                        <h1 class="player2_hand">✊</h1>
+                                </div>
+                                <button class="btn btn-success mt-5 play">✊ Rock Paper Scissor ✊</button>
+                                <h3 class="winner"></h3>
+                        </section>
+                </section>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
